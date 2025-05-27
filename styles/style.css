@@ -7,16 +7,44 @@
 }
 :root{
   --primary-color: #00adb5;
-  --secondary-color: #393e46;
-  --tile_color: #
+  --secondary-color: #1E3E62;
+  --accent-color: #0B192C;
+  --tile-color: #FF6500;
   --text-color: #eeeeee;
-  --error-color: #ff5722;
+  
 }
 .profile{
   border-radius: 100%
 }body {
-
+  color: var(--text-color)
 }
 h1{
-  color:var(--tile_color);
+  color: var(--tile-color);
+}
+.navBar{
+  display: inline-flex;
+  justify-content: space-between;
+  color: var(--text-color);
+  align-items: center;
+  padding: 10px 20px;
+  list-style-type: none;
+  text-decoration: none;
+  
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+}
+nav li{
+  display: inline;
+}
+nav a:hover{
+  background-color: var(--accent-color);
+  color: var(--tile-color);
+  text-decoration: none;
+
 }
