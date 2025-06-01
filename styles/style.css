@@ -9,7 +9,6 @@
   --accent-color: #0B192C;
   --tile-color: #FF6500;
   --text-color: #eeeeee;
-  
 }
 .profile{
   border-radius: 100%;
@@ -28,12 +27,10 @@ h1{
   display: inline-flex;
   justify-content: space-between;
   color: var(--tile-color);
-  
   padding: 10px 20px;
   list-style-type: none;
   text-decoration: none;
   z-index: 10;
-  
 }
 nav{
   display: flex;
@@ -41,16 +38,15 @@ nav{
   align-items: center;
   float: right;
   padding: 10px 20px;
-  
 }
 nav li{
   display: inline;
-  
 }
 nav a:hover{
   background-color: var(--accent-color);
   color: var(--tile-color);
   text-decoration: none;
+  border-radius: 25px;
 }
 .container{
   display: flex;
@@ -83,7 +79,6 @@ nav a:hover{
   text-align: center;
   background: transparent;
   font-size: 3rem;
-
 }
 .name-card p{
   background: transparent;
@@ -100,6 +95,4 @@ footer{
 
 .github-logo{ 
   width: 30px;
-  border-radius: 50px;
-  background: transparent;
 }
