@@ -1,0 +1,86 @@
+button {
+  background-image: linear-gradient(to right, #fb8239, #e75710);
+  font-weight: bolder;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-self: start;
+}
+.submit-button:hover{
+  background-image: linear-gradient(to right, #a51200, #450b00);
+}
+h1 {
+  text-align: center;
+  color: #b70001;
+}
+input, textarea{
+  background-color: lightblue;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+  border: none;
+  width:100%;
+  
+  padding:5px;
+  box-sizing: border-box;
+
+}
+#title{
+  grid-area: title;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#name{
+  grid-area: name;
+}
+#email{
+  grid-area: email;
+}
+#phone{
+  grid-area: phone;
+}
+#subject{
+  grid-area: subject;
+}
+#message{
+  grid-area: message;
+  width:100%;
+  height: 100%;
+  align-self: stretch;
+  justify-self: stretch;
+  resize: none;
+}
+#submit{
+  grid-area: submit;
+}
+.contact-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .5fr .75fr .75fr 4fr 0.5fr;
+  grid-template-areas:
+    "title title"
+    "name email"
+    "phone subject"
+    "message message"
+    "submit submit";
+  gap: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+img {
+  width: 50px;
+  border-radius: 50px;
+  background: transparent;
+}
+footer{
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  right:10px;
+}

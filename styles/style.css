@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
-
 }
 :root{
   --primary-color: #00adb5;
@@ -14,9 +12,14 @@
   
 }
 .profile{
-  border-radius: 100%
-}body {
-  color: var(--text-color)
+  border-radius: 100%;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  background-image: url(/assets/img/tire.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 h1{
   color: var(--tile-color);
@@ -24,53 +27,66 @@ h1{
 .navBar{
   display: inline-flex;
   justify-content: space-between;
-  color: var(--text-color);
-  align-items: center;
+  color: var(--tile-color);
+  
   padding: 10px 20px;
   list-style-type: none;
   text-decoration: none;
+  z-index: 10;
+  
 }
 nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  float: right;
   padding: 10px 20px;
-  background-color: var(--secondary-color);
+  
 }
 nav li{
   display: inline;
+  
 }
 nav a:hover{
   background-color: var(--accent-color);
   color: var(--tile-color);
   text-decoration: none;
 }
-.background{
+.container{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.background img{
+.container img{
   width: 100vw;
-  filter:blur(2.5px);
-}
-.content{
   position: absolute;
-  top: 25%;
-  left: 15%;
-  background-color: darkgray;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+}
+.name-card{
+  position: absolute;
+  width: 300px;
+  top: 10vh;
+  left: 20%;
+  transform: translateX(-50%);
+  background: transparent;
   padding:20px;
   border-radius: 25px;
-  transform: rotate(-10deg);
+  border: black 5px solid;
+  
+  z-index: 2;
 }
-.content h1{
+.name-card h1{
   color: var(--tile-color);
   text-align: center;
-  background-color: darkgray;
+  background: transparent;
+  font-size: 3rem;
+
 }
-.content p{
-  background-color: darkgray;
+.name-card p{
+  background: transparent;
   padding: 10px;
   text-align: center;
 }
