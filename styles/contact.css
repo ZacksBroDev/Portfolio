@@ -73,14 +73,3 @@ input, textarea{
   max-width: 800px;
   margin: 0 auto;
 }
-img {
-  width: 50px;
-  border-radius: 50px;
-  background: transparent;
-}
-footer{
-  text-align: left;
-  position: absolute;
-  bottom: 0;
-  right:10px;
-}

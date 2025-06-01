@@ -90,3 +90,16 @@ nav a:hover{
   padding: 10px;
   text-align: center;
 }
+
+footer{
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+}
+
+.github-logo{ 
+  width: 30px;
+  border-radius: 50px;
+  background: transparent;
+}
