@@ -1,3 +1,4 @@
+/* Contact Form Styles */
 button {
   background-image: linear-gradient(to right, #fb8239, #e75710);
   font-weight: bolder;
@@ -13,7 +14,7 @@ button {
 }
 h1 {
   text-align: center;
-  color: #b70001;
+  color: #FF6500;
 }
 input, textarea{
   background-color: lightblue;
