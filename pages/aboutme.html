@@ -15,28 +15,50 @@
         <li><a class="navBar" href="/pages/contactme.html">Contact Me</a></li>
       </ul>
     </nav>
-    <img src="/assets/img/DBAF.jpeg" alt="">
+
+   
+    <div class="about-me-image">
+      <div class="image-container">
+        <img id="about-me-image" src="/assets/img/DBAF.jpeg" alt=""> <button class="toggle-btn" data-index="0">View Details</button>
+      </div>
+      <div class="image-container">
+        <img id="about-me-image" src="/assets/img/BMX.JPG" alt=""> <button class="toggle-btn" data-index="1">View Details</button>
+      </div>
+      <div class="image-container">
+        <img id="about-me-image" src="/assets/img/dirtbike.JPG" alt=""> <button class="toggle-btn" data-index="2">View Details</button>
+      </div>
+    </div>
+
     <div class="content-container">
       <h1>ABOUT ME</h1>
       <p id="intro">My name is Zackary Brown, and I am a software developer with a passion for creating innovative solutions.</p>
+      <div class="details" style="display:none;">
+        <h2 class="toggle-btn">Dirt Bike</h2>
+        <p class="toggle">I enjoy riding dirt bikes on weekends and exploring new trails.</p>
+      </div>
 
-      <h2>Dirt Bike</h2>
-      <p>I enjoy riding dirt bikes on weekends and exploring new trails.</p>
+      <div class="details" style="display:none;">
+        <h2 class="toggle-btn">Programming</h2>
+        <p class="toggle">I have a strong foundation in programming and I love building web applications and exploring new technologies in my free time.</p>
+      </div>
 
-      <h2>Programming</h2>
-      <p>I have a strong foundation in programming and I love building web applications and exploring new technologies in my free time.</p>
+      <div class="details" style="display:none;">
+        <h2 class="toggle-btn">Hockey</h2>
+        <p class="toggle">I enjoy playing it with friends and family.</p>
+      </div>
 
-      <h2>Hockey</h2>
-      <p>I enjoy playing it with friends and family.</p>
-
-      <h2>BMX</h2>
-      <p>I enjoy riding BMX bikes and participating in local competitions.</p>
-
-      <h2>Mountain Biking</h2>
-      <p>I love exploring mountain trails and challenging myself with difficult terrains.</p>
+      <div class="details" style="display:none;">
+        <h2 class="toggle-btn">BMX</h2>
+        <p class="toggle">I enjoy riding BMX bikes and participating in local competitions.</p>
+      </div>
+        
+      <div class="details" style="display:none;">
+        <h2 class="toggle-btn">Mountain Biking</h2>
+        <p class="toggle">I love exploring mountain trails and challenging myself with difficult terrains.</p>
+      </div>
     </div>
-    
 
+  <script src="/src/script.js"></script>
 
   </body>
 </html>
