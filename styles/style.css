@@ -60,7 +60,7 @@ nav a:hover{
   background: transparent;
   padding:20px;
   border-radius: 25px;
-  border: blue 3px solid;
+  border: var(--primary-color) 3px solid;
   box-shadow: 0px 0px 100px rgba(0, 31, 142, 0.5);
   z-index: 2;
 }
