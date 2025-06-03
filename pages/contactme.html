@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
+    <!-- NavBar-->
     <nav>
     <ul>
       <li><a class="navBar" href="/">Home</a></li>
@@ -16,25 +17,27 @@
       <li><a class="navBar" href="/pages/resume.html">Resume</a></li>
     </ul>
   </nav>
+  <!-- Contact Form -->
   <div class="contact-container">
     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form" value="Contact Form From Personal Portfolio">
       <input type="hidden" name="access_key" value="bd3b1db0-a150-4eb9-8c61-27249b4f0d98">
       <h1 id="title">CONTACT ME</h1>
       <input id="name" type="text" name="name" placeholder="Enter Your Name">
       <input id="email" type="email" name="email" placeholder="Enter Your Email">
-      <input type="phone" id="phone" name="phone" placeholder="Enter Your Phone Number">
+      <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number">
       <input id="subject" type="text" name="subject" placeholder="Enter Subject">
       <textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
       <button id="submit" class="submit-button">Submit</button>
     </form>
   </div>
     
-
+<!-- Footer -->
     <footer>
       <p>&copy; 2025 Zackary Brown</p>
       <p>Follow me on <a href="https://github.com/bmxbro01"><img class="github-logo" src="/assets/img/github-mark-white.svg" alt="GitHub Logo"></a></p>
     </footer>
-
+    
+    <!-- Scripts For Contact Form -->
     <script>
       document.getElementById('contact-form').addEventListener('submit', function(e) {
         setTimeout(() => {

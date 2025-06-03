@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
+<!-- NavBar-->
     <nav>
       <ul>
         <li><a class="navBar" href="/">Home</a></li>
@@ -16,22 +17,19 @@
       </ul>
     </nav>
 
-   
-    <div class="about-me-image">
-      <div class="image-container">
-        <img id="about-me-image" src="/assets/img/DBAF.jpeg" alt=""> <button class="toggle-btn" data-index="0">View Details</button>
-      </div>
-      <div class="image-container">
-        <img id="about-me-image" src="/assets/img/code.jpg" alt=""> <button class="toggle-btn" data-index="1">View Details</button>
-      </div>
-      <div class="image-container">
-        <img id="about-me-image" src="/assets/img/dirtbike.JPG" alt=""> <button class="toggle-btn" data-index="2">View Details</button>
-      </div>
-      <div class="image-container">
-        <img id="about-me-image" src="/assets/img/BMX.JPG" alt=""> <button class="toggle-btn" data-index="3">View Details</button>
-      </div>
-    </div>
+<!-- Image and button container -->
+    <div class="image-container">
+        <img class="images" src="/assets/img/DBAF.jpeg" alt="" loading="lazy">
+        <img class="images" src="/assets/img/code.jpg" alt="" loading="lazy">
+        <img class="images" src="/assets/img/dirtbike.JPG" alt="" loading="lazy">
+        <img class="images" src="/assets/img/BMX.JPG" alt="" loading="lazy">
 
+        <button id="btn" class="toggle-btn" data-index="0">View Details</button>
+        <button id="btn" class="toggle-btn" data-index="1">View Details</button>
+        <button id="btn" class="toggle-btn" data-index="2">View Details</button>
+        <button id="btn" class="toggle-btn" data-index="3">View Details</button>
+    </div>
+<!-- About Me Toggle Sections -->
     <div class="content-container">
       <h1>ABOUT ME</h1>
       <p id="intro">A developer, racer, and lifelong learner. I bring the same focus and drive to coding as I do to the track and the rink. 
