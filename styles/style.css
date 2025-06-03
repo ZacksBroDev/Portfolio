@@ -114,6 +114,7 @@ h1{
   margin-left: 4rem;
   margin-top: .5rem;
   color: var(--text-color);
+  text-indent: 1em;
 }
 .content-container #intro{
   text-align: center;
@@ -129,6 +130,7 @@ h1{
   padding: 1rem;
   border-radius: 30px;
   margin: 2rem;
+  text-wrap: pre-wrap;
 }
 
 /** Portfolio Styles */
