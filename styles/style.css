@@ -58,9 +58,12 @@ nav a:hover{
 .hero{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
   width: 100vw;
+  position: relative;
+  gap: 5vw;
+  padding: 0 5vw
 }
 .name-card{
   width: 300px;
@@ -81,6 +84,23 @@ nav a:hover{
   background: transparent;
   padding: 10px;
   text-align: center;
+}
+
+#contact-me{
+  background-color: rgba(118,118,118,0.8);
+  padding: 1rem;
+  border-radius: 30px;
+  margin-right: 5vw;
+  height:fit-content;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+#contact-me img{
+  width: 70px;
 }
 
 /** General Styles */
@@ -132,6 +152,11 @@ footer{
 }
 .github-logo{ 
   width: 30px;
+}
+.profile{
+  border-radius: 50%;
+  width: 180px;
+
 }
 
 /** Portfolio Styles */
@@ -190,3 +215,4 @@ footer{
 #btn:hover{
   background-image: linear-gradient(to right, #a51200, #450b00);
 }
+
