@@ -68,7 +68,7 @@ nav a:hover{
 .name-card{
   width: 300px;
   background: transparent;
-  padding:20px;
+  padding: 2.5rem;
   border-radius: 25px;
   border: var(--primary-color) 3px solid;
   box-shadow: 0px 0px 100px rgba(0, 31, 142, 0.5);
