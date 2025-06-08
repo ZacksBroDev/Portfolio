@@ -155,6 +155,40 @@ nav a:hover{
 #contact-me img{
   width: 70px;
 }
+@media (max-width: 600px) {
+  .hero{
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+  }
+  .name-card{
+    max-width: 400px;
+  }
+  #contact-me{
+    width: 80%;
+    max-width: 300px;
+    margin-right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+  }
+  #contact-me img{
+    width: 50px;
+  }
+  .contact-container {
+    width: 80%;
+    max-width: 400px;
+  }
+  .name-card h1{
+    color: var(--tile-color);
+    text-align: center;
+    background: transparent;
+    font-size: 1rem;
+  }
+}
 
 /** General Styles */
 .content-container h1 {
@@ -203,6 +237,23 @@ h1{
 .profile{
   border-radius: 50%;
   width: 180px;
+}
+@media (max-width: 600px) {
+  .content-container h1{
+    font-size: 1.5rem;
+  }
+  .content-container h2{
+    font-size: 1.2rem;
+  }
+  .content-container h3{
+    font-size: 1rem;
+  }
+  .content-container p{
+    font-size: larger;
+    margin-left: 0;
+    margin-top: .5rem;
+    text-align: center;
+  }
 }
 
 /** Portfolio Styles */
