@@ -11,7 +11,7 @@
 }
 #home {
   color: var(--text-color);
-  background-color: var(--secondary-color);
+  background-color: var(--bg-color);
   background-image: url(/assets/img/tire.jpg);
   background-size: cover;
   background-repeat: no-repeat;
