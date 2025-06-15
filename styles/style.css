@@ -43,8 +43,8 @@
 
 /** Variables */
 :root{
-  --secondary-color: #07407b;
-  --primary-color: #0e0f3b;
+  --secondary-color: #e89149;
+  --primary-color: #e77d22;
   --accent-color: #0B192C;
   --tile-color: #f7931e;
   --text-color: #7fcdee;
@@ -71,8 +71,6 @@ nav ul{
   display: flex;
   justify-content:flex-end;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 nav li{
   display: inline;
@@ -88,6 +86,7 @@ nav a:hover{
   color: var(--tile-color);
   text-decoration: none;
   border-radius: 25px;
+  border: var(--text-color) 2px solid ;
 }
 @media (max-width: 600px) {
   .navBar{
@@ -125,13 +124,34 @@ nav a:hover{
   border: var(--primary-color) 3px solid;
   box-shadow: 0px 0px 100px rgba(0, 31, 142, 0.5);
   z-index: 2;
+  margin-left: 2rem;
 }
+.name-card:hover{
+  transform: scale(1.25);
+  box-shadow: 0px 0px 150px rgba(0, 31, 142, 0.7);
+  border: var(--text-color) 3px solid;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: transform 0.8s ease-in-out;
+  animation: shadow-dance 2s ease-in-out forwards;
+}
+
+@keyframes shadow-dance {
+    0%{
+        text-shadow: 0px 0px 0 orange, 0px 0px 0 darkred;
+    }
+    100% {
+        text-shadow: 5px 5px 0 orange, 10px 10px 0 darkred;
+    }
+}
+
 .name-card h1{
   color: var(--tile-color);
   text-align: center;
   background: transparent;
   font-size: 3rem;
 }
+
 .name-card p{
   background: transparent;
   padding: 10px;
@@ -153,6 +173,12 @@ nav a:hover{
 }
 #contact-me img{
   width: 70px;
+}
+.hero img:hover{
+  transform: scale(1.5);
+  transition: transform 0.3s ease-in-out;
+  border: var(--text-color) 2px solid;
+  border-radius: 10px;
 }
 @media (max-width: 600px) {
   .hero{
@@ -225,7 +251,7 @@ h1{
   color: var(--text-color);
 }
 .content-container {
-  background-color: rgba(118,118,118,0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   padding: 1rem;
   border-radius: 30px;
@@ -258,6 +284,9 @@ h1{
 /** Portfolio Styles */
 .portfolio{
   background-image: url(/assets/img/port-bg.jpg);
+}
+.port-title{
+  font-size: 2.5rem;
 }
 .skills li {
   padding: 1rem;
@@ -302,7 +331,7 @@ h1{
   left: 0;
   color: white;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   border-radius: 25px;
   pointer-events: none;
@@ -343,6 +372,24 @@ h1{
   gap: 0.5rem;
   position: relative;
 }
+.port-content{
+  text-align: left;
+}
+.port-content li{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+  color: var(--text-color);
+  list-style-type: none;
+}
+.port-text p{
+  margin-top: .5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: .5rem;
+}
+
+
 
 /** About Me Styles */
 .image-container{
