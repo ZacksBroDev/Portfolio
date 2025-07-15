@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-/** * Global Styles
- * This file contains the global styles for the website.
- * It includes styles for the body, navbar, hero section, and other components.
- */
+
  /** * Reset Styles */
 *{
   margin: 0;
@@ -48,6 +45,7 @@
   --accent-color: #0B192C;
   --tile-color: #f7931e;
   --text-color: #7fcdee;
+  --off-text-color: #0062cc;
   --bg-color:#767676;
 }
 
@@ -261,7 +259,7 @@ h1{
 .content-container li{
   margin-left: 4rem;
   margin-top: .5rem;
-  color: var(--text-color);
+  color: var(--off-text-color);
 }
 .content-container {
   background-color: rgba(0, 0, 0, 0.7);
@@ -540,4 +538,16 @@ h1{
 .btn:disabled {
   cursor: default;
   opacity: .24;
+}
+
+
+#resume p{
+  margin-left: 2.25rem;
+  margin-right: 2rem;
+  margin-top: .5rem;
+  color: var(--text-color);
+}
+.res-list{
+  padding-left: 1rem;
+  color: var(--off-text-color);
 }
