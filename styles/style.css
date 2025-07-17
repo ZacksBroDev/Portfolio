@@ -315,11 +315,22 @@ h1{
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.7rem;
-  display: flex;
-  flex-wrap: wrap;
   width: max-content;
   margin: 1rem auto;
 }
+
+@media (max-width: 768px) {
+  .skills {
+    width: 100%;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .skills-container {
   padding: 1rem;
   width: fit-content;
@@ -400,34 +411,28 @@ h1{
 
 /** About Me Styles */
 .image-container{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
   width: 100%;
+  margin-top: 3rem;
+}
+.img-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .images{
   border-radius: 20%;
   width: 200px;
-  margin-top: 3rem;
-  margin-left: 3rem;
-}
-
-@media (max-width: 600px) {
-  .image-container{
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-  }
-  .images{
-    width: 100%;
-    margin-left: 0;
-  }
-  #btn{
-    width: 100%;
-    margin-left: 0;
-  }
+  margin:auto;
 }
 
 .btn {
-  align-items: center;
   appearance: none;
   background-clip: padding-box;
   background-color: initial;
@@ -444,7 +449,7 @@ h1{
   font-weight: 800;
   justify-content: center;
   line-height: 24px;
-  margin: 0;
+  margin: 1rem auto;
   min-height: 64px;
   outline: none;
   overflow: visible;
