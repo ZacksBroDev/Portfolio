@@ -10,3 +10,11 @@ document.querySelectorAll(".toggle-btn").forEach(function (btn) {
     }
   });
 });
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    setTimeout(() => {
+      this.reset();
+    }, 1);
+  });
