@@ -1,4 +1,13 @@
 /* Contact Form Styles */
+.contact-container{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-wrap: pre-wrap;
+}
 button {
   background-image: linear-gradient(to right, #fb8239, #e75710);
   font-weight: bolder;
