@@ -338,6 +338,7 @@ h1{
   background-color: rgba(0, 0, 0, 0.5);
 }
 .port-item {
+  position: relative;
   width: 120px;
   transition: width 0.8s ease-in-out;
 }
@@ -366,18 +367,13 @@ h1{
   clip-path: inset(0 70% 0 0);
   transition: clip-path 0.8s ease-in-out;
 }
-.port-img:hover + .port-text,
-.port-text:hover{
-  transition: opacity 0.8s ease-in-out;
+.port-item:hover .port-text{
   opacity: 1;
 }
-.port-img:hover {
+.port-item:hover .port-img {
   clip-path: inset(0 0 0 0);
-  transition: transform 0.8s;
-  transition: clip-path 0.8s ease-in-out;
 }
 .port-item:hover {
-  position: relative;
   width: 650px;
   z-index: 10;
   transition: width 0.8s ease-in-out;
