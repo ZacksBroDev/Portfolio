@@ -422,8 +422,8 @@ h1{
   width: 250px; /* Fixed width for consistent grid */
 }
 .images{
-  width: 0px;
-  height: 300px; /* Fixed height for consistency */
+  width: 200px;
+  height: 200px; /* Fixed height for consistency */
   object-fit: cover; /* Crop image to fit without distortion */
   object-position: center; /* Center the cropped area */
   border-radius: 20%;
