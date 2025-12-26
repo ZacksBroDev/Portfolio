@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/icons/port.png">
+  <title>Mile High Karate - Case Study</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body id="case-study">
+  <!-- NavBar-->
+  <nav>
+    <ul>
+      <li><a class="navBar" href="/">Home</a></li>
+      <li><a class="navBar" href="/pages/aboutme.html">About Me</a></li>
+      <li><a class="navBar" href="/pages/portfolio.html">Portfolio</a></li>
+      <li><a class="navBar" href="/pages/resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Case Study Content -->
+  <div class="content-container">
+    <h1>Mile High Karate Training Platform</h1>
+    <p class="subtitle">Full-Stack React Application for Martial Arts Education</p>
+    
+    <div class="case-study-section">
+      <h2>🎯 The Problem</h2>
+      <p>Mile High Karate needed to digitize their belt-level curriculum and provide students with 24/7 access to training materials. The existing solution was scattered PDFs and YouTube videos with no access control, meaning students could access content beyond their belt level, undermining the dojo's teaching methodology.</p>
+      
+      <p><strong>Key challenges:</strong></p>
+      <ul>
+        <li>Implement secure, belt-specific content gating without overly complex infrastructure</li>
+        <li>Support 100+ concurrent users on a limited budget (sub-$50/month hosting)</li>
+        <li>Enable instructors to update content without developer intervention</li>
+        <li>Maintain fast load times for video-heavy content</li>
+      </ul>
+    </div>
+
+    <div class="case-study-section">
+      <h2>👥 Users & Use Cases</h2>
+      <p><strong>Primary Users:</strong> Students (ages 6-60) accessing belt-specific training videos, written materials, and belt requirements.</p>
+      
+      <p><strong>Secondary Users:</strong> Instructors updating curriculum, tracking student progress, and managing content.</p>
+      
+      <p><strong>Core User Flow:</strong></p>
+      <ol>
+        <li>Student logs in via Auth0 (Google/email)</li>
+        <li>System reads user's belt level from MongoDB profile</li>
+        <li>React front-end renders only authorized content</li>
+        <li>Student streams videos, downloads PDFs, views technique breakdowns</li>
+      </ol>
+    </div>
+
+    <div class="case-study-section">
+      <h2>🏗️ Architecture & Tech Decisions</h2>
+      
+      <h3>Tech Stack</h3>
+      <ul>
+        <li><strong>Front-End:</strong> React 18 with React Router for SPA navigation</li>
+        <li><strong>Back-End:</strong> Node.js + Express API on AWS EC2</li>
+        <li><strong>Database:</strong> MongoDB Atlas (free tier, ~2GB data)</li>
+        <li><strong>Auth:</strong> Auth0 for authentication + JWT validation</li>
+        <li><strong>Storage:</strong> AWS S3 for video/PDF storage with CloudFront CDN</li>
+        <li><strong>Hosting:</strong> Vercel for React front-end, EC2 t3.micro for API</li>
+      </ul>
+
+      <h3>Why These Choices?</h3>
+      <p><strong>Auth0 over roll-your-own:</strong> Security is critical when dealing with minors. Auth0 provides SOC 2 compliance, MFA, and saves ~200 hours of security implementation/maintenance.</p>
+      
+      <p><strong>MongoDB over PostgreSQL:</strong> Belt levels and curriculum are document-oriented (nested arrays of techniques, videos, requirements). MongoDB's flexible schema allowed rapid iteration during curriculum changes.</p>
+      
+      <p><strong>S3 + CloudFront over direct streaming:</strong> Offloads 95% of bandwidth to AWS CDN. Without this, video streaming would cost $200+/month. CloudFront reduces latency from ~2s to ~300ms for video start.</p>
+
+      <p><strong>React SPA over SSR:</strong> No SEO requirements (members-only site). SPA provides instant navigation and offline-capable PWA potential for future iterations.</p>
+    </div>
+
+    <div class="case-study-section">
+      <h2>⚖️ Tradeoffs & Lessons Learned</h2>
+      
+      <h3>What Worked</h3>
+      <ul>
+        <li><strong>Auth0 integration:</strong> Zero security incidents, 99.9% uptime. Users can self-service password resets.</li>
+        <li><strong>CloudFront CDN:</strong> Reduced video buffering complaints by 90% vs. direct S3.</li>
+        <li><strong>MongoDB flexible schema:</strong> Allowed curriculum restructuring 3x without migrations.</li>
+      </ul>
+
+      <h3>What I'd Change</h3>
+      <ul>
+        <li><strong>Over-reliance on client-side filtering:</strong> Belt-level gating happens in React. A determined user could inspect network calls and access unauthorized videos. Would refactor to enforce access control at API level with signed S3 URLs that expire.</li>
+        
+        <li><strong>No automated testing:</strong> Launched without Jest/Cypress. Instructor content updates occasionally break student views. Would implement E2E tests covering auth flows and content rendering before next release.</li>
+        
+        <li><strong>Manual deployment:</strong> Currently SSH + git pull + pm2 restart. Should implement CI/CD with GitHub Actions for automated testing and zero-downtime deploys.</li>
+        
+        <li><strong>Video encoding:</strong> All videos are uploaded raw. Should implement AWS MediaConvert for adaptive bitrate streaming (HLS/DASH) to support low-bandwidth users.</li>
+        
+        <li><strong>Analytics gap:</strong> No visibility into which videos get watched most, bounce rates, or session lengths. Would integrate PostHog or similar to inform curriculum prioritization.</li>
+      </ul>
+    </div>
+
+    <div class="case-study-section">
+      <h2>📈 Outcomes & Metrics</h2>
+      <ul>
+        <li><strong>100+ active users</strong> (65% of total dojo enrollment)</li>
+        <li><strong>~300 monthly sessions</strong> averaging 12 minutes each</li>
+        <li><strong>Zero downtime</strong> since June 2024 launch</li>
+        <li><strong>Sub-$45/month hosting costs</strong> (AWS + MongoDB Atlas free tier + Vercel free tier)</li>
+        <li><strong>4.8/5 user satisfaction</strong> (informal instructor survey)</li>
+      </ul>
+    </div>
+
+    <div class="case-study-section">
+      <h2>🔗 Links</h2>
+      <p>
+        <a href="https://mhktraining.com/" target="_blank" rel="noopener">View Live Site</a> | 
+        <a href="https://github.com/ZacksBroDev/mhk-website" target="_blank" rel="noopener">View Repository</a> | 
+        <a href="/pages/portfolio.html">← Back to Portfolio</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

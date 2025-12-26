@@ -525,3 +525,99 @@ h1{
   padding-left: 1rem;
   color: var(--off-text-color);
 }
+
+/* Case Study Styles */
+#case-study {
+  background-color: #1a1a1a;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/assets/img/port-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+#case-study .content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+#case-study h1 {
+  color: var(--text-color);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#case-study .subtitle {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+#case-study .case-study-section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#case-study h2 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+#case-study h3 {
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+#case-study p {
+  margin-bottom: 1rem;
+  color: #d0d0d0;
+}
+
+#case-study ul, #case-study ol {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  color: #d0d0d0;
+}
+
+#case-study li {
+  margin-bottom: 0.8rem;
+}
+
+#case-study strong {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+#case-study a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-color);
+  transition: all 0.3s ease;
+}
+
+#case-study a:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+#case-study code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: var(--secondary-color);
+}

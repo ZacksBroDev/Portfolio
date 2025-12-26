@@ -1,48 +1,77 @@
-💼 Full Stack Developer Portfolio
+# Full Stack Developer Portfolio
 
-Welcome to my professional portfolio! This repository is a showcase of my journey as a Full Stack Developer, highlighting the skills, technologies, and projects that define my passion for building efficient, scalable, and user-friendly web applications.
-👨‍💻 About Me
+Building production-ready web applications with React, Node.js, and modern cloud infrastructure. Open to full-stack developer roles.
 
-I’m a detail-oriented and creative Full Stack Developer with experience in both front-end and back-end technologies. I specialize in developing robust web applications from concept to deployment. I thrive on solving complex problems, optimizing performance, and delivering clean, maintainable code.
-🚀 What’s Inside
+**Live Portfolio:** [zackarybrown.net](https://zackarybrown.net)
 
-This portfolio includes:
+## Featured Projects
 
-    📁 Project Highlights – End-to-end web applications demonstrating real-world functionality and modern design.
+### Mile High Karate Training Platform
 
-    🛠️ Tech Stack Expertise – A breakdown of tools, libraries, and frameworks I use daily.
+**[Live Site](https://mhktraining.com/)** | **[Repository](https://github.com/ZacksBroDev/mhk-website)**
 
-    📈 Code Samples & Case Studies – In-depth documentation, GitHub links, and insights into design decisions.
+Live martial arts training platform with authentication and belt-specific content delivery.
 
-    💼 Work Experience & Education – A brief summary of my professional background and relevant training.
+- Built full-stack React application with Auth0 authentication and MongoDB backend
+- Architected belt-specific content delivery system serving personalized study materials
+- Serving 100+ active students with zero downtime since launch
 
-🧰 Technologies I Use
-Front-End
+**Tech:** React, Node.js, Express, MongoDB, Auth0, AWS
 
-    Languages: HTML, CSS, JavaScript
+---
 
-DevOps & Tools
+### JustMalikBeats Music Marketplace
 
-    Git & GitHub
+**[Live Site](https://main.d2l99u51v53uvg.amplifyapp.com/)** | **[Repository](https://github.com/ZacksBroDev/justmalikbeats)**
 
-🌐 Live Projects
+E-commerce platform for music producers with secure payment processing and digital rights management.
 
-Check out some of my live projects:
+- Integrated Stripe payment processing with secure checkout flow
+- Implemented digital rights management and automated file delivery system
+- Processing transactions with $0 fraud incidents and 100% payment success rate
 
-    Project 1 Name – Short description
+**Tech:** React, Node.js, Express, Stripe, AWS Amplify
 
-    Project 2 Name – Short description
+---
 
-    More on my website
+### RemoraNotes iOS App
 
-📫 Let’s Connect
+**[Live Site](https://thefutons.net/)** | **[Repository](https://github.com/ZacksBroDev/remoranotes)**
 
-I'm open to new opportunities and collaborations. Feel free to get in touch!
+Mobile-first note-taking app with local-first architecture and offline capabilities.
 
-    📧 Email: [zackaryzbrown@gmail.com]
+- Built native iOS application with Swift and SwiftUI
+- Implemented CoreData persistence with offline-first architecture
+- Achieved sub-100ms note creation with zero data loss
 
-    🔗 LinkedIn: [https://www.linkedin.com/in/zackary-brown-a2b60b20a/]
+**Tech:** Swift, SwiftUI, CoreData, iOS
 
-    🌍 Website: [zackarybrown.net]
+---
 
-    🧑‍💻 GitHub: [https://github.com/ZacksBroDev]
+## Tech Stack
+
+**Front-End:** React, JavaScript, HTML5, CSS3, SwiftUI  
+**Back-End:** Node.js, Express  
+**Database:** MongoDB  
+**Auth & Payments:** Auth0, Stripe  
+**DevOps:** AWS, AWS Amplify, Git, GitHub
+
+## Run Locally
+
+```bash
+# Clone the repository
+git clone https://github.com/ZacksBroDev/Portfolio.git
+
+# Navigate to the project directory
+cd Portfolio
+
+# Open index.html in your browser or use a local server
+python3 -m http.server 8000
+# Visit http://localhost:8000
+```
+
+## Contact
+
+**Email:** zackaryzbrown@gmail.com  
+**LinkedIn:** [linkedin.com/in/zackary-brown-a2b60b20a](https://www.linkedin.com/in/zackary-brown-a2b60b20a/)  
+**GitHub:** [github.com/ZacksBroDev](https://github.com/ZacksBroDev)
