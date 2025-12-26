@@ -11,13 +11,13 @@ screenshots/
     - belt-system.png
     - video-player.png
     - demo.gif
-  
+
   justmalikbeats/
     - homepage.png
     - checkout.png
     - library.png
     - demo.gif
-  
+
   remoranotes/
     - notes-list.png
     - editor.png

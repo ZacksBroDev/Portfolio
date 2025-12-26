@@ -24,11 +24,13 @@
   <div class="content-container">
     <h1>Mile High Karate Training Platform</h1>
     <p class="subtitle">Full-Stack React Application for Martial Arts Education</p>
-    
+
     <div class="case-study-section">
       <h2>🎯 The Problem</h2>
-      <p>Mile High Karate needed to digitize their belt-level curriculum and provide students with 24/7 access to training materials. The existing solution was scattered PDFs and YouTube videos with no access control, meaning students could access content beyond their belt level, undermining the dojo's teaching methodology.</p>
-      
+      <p>Mile High Karate needed to digitize their belt-level curriculum and provide students with 24/7 access to
+        training materials. The existing solution was scattered PDFs and YouTube videos with no access control, meaning
+        students could access content beyond their belt level, undermining the dojo's teaching methodology.</p>
+
       <p><strong>Key challenges:</strong></p>
       <ul>
         <li>Implement secure, belt-specific content gating without overly complex infrastructure</li>
@@ -40,10 +42,12 @@
 
     <div class="case-study-section">
       <h2>👥 Users & Use Cases</h2>
-      <p><strong>Primary Users:</strong> Students (ages 6-60) accessing belt-specific training videos, written materials, and belt requirements.</p>
-      
-      <p><strong>Secondary Users:</strong> Instructors updating curriculum, tracking student progress, and managing content.</p>
-      
+      <p><strong>Primary Users:</strong> Students (ages 6-60) accessing belt-specific training videos, written
+        materials, and belt requirements.</p>
+
+      <p><strong>Secondary Users:</strong> Instructors updating curriculum, tracking student progress, and managing
+        content.</p>
+
       <p><strong>Core User Flow:</strong></p>
       <ol>
         <li>Student logs in via Auth0 (Google/email)</li>
@@ -55,7 +59,7 @@
 
     <div class="case-study-section">
       <h2>🏗️ Architecture & Tech Decisions</h2>
-      
+
       <h3>Tech Stack</h3>
       <ul>
         <li><strong>Front-End:</strong> React 18 with React Router for SPA navigation</li>
@@ -67,36 +71,49 @@
       </ul>
 
       <h3>Why These Choices?</h3>
-      <p><strong>Auth0 over roll-your-own:</strong> Security is critical when dealing with minors. Auth0 provides SOC 2 compliance, MFA, and saves ~200 hours of security implementation/maintenance.</p>
-      
-      <p><strong>MongoDB over PostgreSQL:</strong> Belt levels and curriculum are document-oriented (nested arrays of techniques, videos, requirements). MongoDB's flexible schema allowed rapid iteration during curriculum changes.</p>
-      
-      <p><strong>S3 + CloudFront over direct streaming:</strong> Offloads 95% of bandwidth to AWS CDN. Without this, video streaming would cost $200+/month. CloudFront reduces latency from ~2s to ~300ms for video start.</p>
+      <p><strong>Auth0 over roll-your-own:</strong> Security is critical when dealing with minors. Auth0 provides SOC 2
+        compliance, MFA, and saves ~200 hours of security implementation/maintenance.</p>
 
-      <p><strong>React SPA over SSR:</strong> No SEO requirements (members-only site). SPA provides instant navigation and offline-capable PWA potential for future iterations.</p>
+      <p><strong>MongoDB over PostgreSQL:</strong> Belt levels and curriculum are document-oriented (nested arrays of
+        techniques, videos, requirements). MongoDB's flexible schema allowed rapid iteration during curriculum changes.
+      </p>
+
+      <p><strong>S3 + CloudFront over direct streaming:</strong> Offloads 95% of bandwidth to AWS CDN. Without this,
+        video streaming would cost $200+/month. CloudFront reduces latency from ~2s to ~300ms for video start.</p>
+
+      <p><strong>React SPA over SSR:</strong> No SEO requirements (members-only site). SPA provides instant navigation
+        and offline-capable PWA potential for future iterations.</p>
     </div>
 
     <div class="case-study-section">
       <h2>⚖️ Tradeoffs & Lessons Learned</h2>
-      
+
       <h3>What Worked</h3>
       <ul>
-        <li><strong>Auth0 integration:</strong> Zero security incidents, 99.9% uptime. Users can self-service password resets.</li>
+        <li><strong>Auth0 integration:</strong> Zero security incidents, 99.9% uptime. Users can self-service password
+          resets.</li>
         <li><strong>CloudFront CDN:</strong> Reduced video buffering complaints by 90% vs. direct S3.</li>
         <li><strong>MongoDB flexible schema:</strong> Allowed curriculum restructuring 3x without migrations.</li>
       </ul>
 
       <h3>What I'd Change</h3>
       <ul>
-        <li><strong>Over-reliance on client-side filtering:</strong> Belt-level gating happens in React. A determined user could inspect network calls and access unauthorized videos. Would refactor to enforce access control at API level with signed S3 URLs that expire.</li>
-        
-        <li><strong>No automated testing:</strong> Launched without Jest/Cypress. Instructor content updates occasionally break student views. Would implement E2E tests covering auth flows and content rendering before next release.</li>
-        
-        <li><strong>Manual deployment:</strong> Currently SSH + git pull + pm2 restart. Should implement CI/CD with GitHub Actions for automated testing and zero-downtime deploys.</li>
-        
-        <li><strong>Video encoding:</strong> All videos are uploaded raw. Should implement AWS MediaConvert for adaptive bitrate streaming (HLS/DASH) to support low-bandwidth users.</li>
-        
-        <li><strong>Analytics gap:</strong> No visibility into which videos get watched most, bounce rates, or session lengths. Would integrate PostHog or similar to inform curriculum prioritization.</li>
+        <li><strong>Over-reliance on client-side filtering:</strong> Belt-level gating happens in React. A determined
+          user could inspect network calls and access unauthorized videos. Would refactor to enforce access control at
+          API level with signed S3 URLs that expire.</li>
+
+        <li><strong>No automated testing:</strong> Launched without Jest/Cypress. Instructor content updates
+          occasionally break student views. Would implement E2E tests covering auth flows and content rendering before
+          next release.</li>
+
+        <li><strong>Manual deployment:</strong> Currently SSH + git pull + pm2 restart. Should implement CI/CD with
+          GitHub Actions for automated testing and zero-downtime deploys.</li>
+
+        <li><strong>Video encoding:</strong> All videos are uploaded raw. Should implement AWS MediaConvert for adaptive
+          bitrate streaming (HLS/DASH) to support low-bandwidth users.</li>
+
+        <li><strong>Analytics gap:</strong> No visibility into which videos get watched most, bounce rates, or session
+          lengths. Would integrate PostHog or similar to inform curriculum prioritization.</li>
       </ul>
     </div>
 
@@ -114,8 +131,8 @@
     <div class="case-study-section">
       <h2>🔗 Links</h2>
       <p>
-        <a href="https://mhktraining.com/" target="_blank" rel="noopener">View Live Site</a> | 
-        <a href="https://github.com/ZacksBroDev/mhk-website" target="_blank" rel="noopener">View Repository</a> | 
+        <a href="https://mhktraining.com/" target="_blank" rel="noopener">View Live Site</a> |
+        <a href="https://github.com/ZacksBroDev/mhk-website" target="_blank" rel="noopener">View Repository</a> |
         <a href="/pages/portfolio.html">← Back to Portfolio</a>
       </p>
     </div>
