@@ -1,111 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/icons/port.png">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/styles/style.css">
-  </head>
-  <body id="portfolio">
-    <!-- NavBar-->
-    <nav>
-      <ul>
-        <li><a class="navBar" href="/">Home</a></li>
-        <li><a class="navBar" href="/pages/aboutme.html">About Me</a></li>
-        <li><a class="navBar" id="active" href="/pages/portfolio.html">Portfolio</a></li>
-        <li><a class="navBar" href="/pages/resume.html">Resume</a></li>
-      </ul>
-    </nav>
-<!-- Skills -->
-    <div class="skills-container">
-      <div class="skills">
-        <a href="https://en.wikipedia.org/wiki/SQL"><img class="skill-icon" src="/assets/icons/sql.svg" alt="SQL"></a>
-        <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)"><img class="skill-icon" src="/assets/icons/swift.svg" alt="Swift"></a>
-        <a href="https://en.wikipedia.org/wiki/HTML"><img class="skill-icon" src="/assets/icons/html.svg" alt="HTML"></a>
-        <a href="https://en.wikipedia.org/wiki/CSS"><img class="skill-icon" src="/assets/icons/css.svg" alt="CSS"></a>
-        <a href="https://en.wikipedia.org/wiki/JavaScript"><img class="skill-icon" src="/assets/icons/javascript.svg" alt="JavaScript"></a>
-        <a href="https://en.wikipedia.org/wiki/Node.js"><img class="skill-icon" src="/assets/icons/nodejs.svg" alt="Node.js"></a>
-        <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"><img class="skill-icon" src="/assets/icons/react.svg" alt="React"></a>
-        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img class="skill-icon" src="/assets/icons/python.svg" alt="Python"></a>
-        <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><img class="skill-icon" src="/assets/icons/java.svg" alt="Java"></a>
-        <a href="https://en.wikipedia.org/wiki/C%2B%2B"><img class="skill-icon" src="/assets/icons/cplusplus.svg" alt="C++"></a>
-      </div>
-      <div class="skills">
-        <a href="https://en.wikipedia.org/wiki/Git"><img class="skill-icon" src="/assets/icons/git.svg" alt="Git"></a>
-        <a href="https://en.wikipedia.org/wiki/Object-oriented_programming"><img class="skill-icon" src="/assets/icons/oop.svg" alt="OOP"></a>
-        <a href="https://en.wikipedia.org/wiki/Debugging"><img class="skill-icon" src="/assets/icons/debug.svg" alt="Debugging"></a>
-        <a href="https://en.wikipedia.org/wiki/User_experience"><img class="skill-icon" src="/assets/icons/ux.svg" alt="UX/UI"></a>
-        <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"><img class="skill-icon" src="/assets/icons/vscode.svg" alt="VSCode"></a>
-      </div>
-    </div>
-<!-- Portfolio -->
-    <div class="content-container">
-        <h1 class="port-title">PORTFOLIO</h1>
-      <ul class="wrapper">
-        <div class="port-item">
-          <img class="port-img" src="/assets/img/karateKids.png" alt="">
-          <div class="port-text">
-            <h1>Mile High Karate</h1>
-            <h2>Study & Training Platform for Martial Arts Students</h2>
-            <p>Mile High Karate is a full-stack web application I developed to support martial arts students in learning and reviewing the forms required for their belt tests. The platform acts as an educational resource, offering belt-specific guidance, structured study tools, and a streamlined experience tailored for students of all levels.</p>
 
-            <h3>Tech Stack:</h3>
-            <ul class="port-content">
-                <li>Front End: React (with React, HTML, CSS, JavaScript)</li>
-                <li>Back End: MongoDB, Node.js</li>
-                <li>Authentication: Auth0</li>
-            </ul>
-            <h3>Key Features:</h3>
-            <ul class="port-content">
-                <li>Belt-specific study sections for different forms</li>
-                <li>Secure user login and session handling via Auth0</li>
-                <li>Responsive design with a clean, intuitive React interface</li>
-                <li>Dynamic data loading for personalized learning content</li>
-            </ul>
-            <p>I designed and developed this project independently, focusing on creating a clean user experience backed by robust data handling and secure authentication. It demonstrates my ability to build a fully functional full-stack solution with modern web technologies.</p>
-          </div>
-        </div>
-        <div class="port-item">
-          <img class="port-img" src="/assets/img/carTag.jpeg" alt="Car-Card">
-          <div class="port-text">
-            <h1>Jonezen Performance</h1>
-            <h2>Automotive Performance Shop</h2>
-            <p>Jonezen Performance is a fully responsive React-based website I developed to showcase and promote a high-performance automotive shop that specializes in building fast cars and offering custom vehicle services.</p>
-            <p>The site is designed to reflect the energy and quality of the brand while giving potential clients an easy way to explore services, view testimonials, and get in touch for bookings.</p>
-            <h3>Key Features:</h3>
-            <ul class="port-content">
-              <li>Built with React for a fast, responsive user experience</li>
-              <li>Integrated booking calendar so users can schedule appointments or consultations</li>
-              <li>Client testimonials section to build trust and credibility</li>
-              <li>Mobile-first, responsive design for smooth browsing across all devices</li>
-              <li>Contact form for quick inquiries and service requests</li>
-            </ul>
-            <p>I designed and developed the entire site, focusing on clean visuals, clear calls to action, and a structure that supports future scalability (such as adding photo galleries or a blog).</p>  
-          </div>
-        </div>
-        <div class="port-item">
-          <img class="port-img" src="/assets/img/futons.jpg" alt="futons">
-          <div class="port-text">
-            <h1>The Futons</h1>
-            <h2>Band Website & Digital Presence</h2>
-            <p>The Futons is a custom website I designed and built for a local independent band to help them establish an online presence and connect with their fans. The goal was to create a simple, stylish, and responsive site that reflects their sound and identity.</p>
-            <h3>Tech Stack:</h3>
-            <ul class="port-content">
-                <li>Front End: HTML, CSS, JavaScript (vanilla)</li>
-            </ul>
-            <h3>Key Features:</h3>
-            <ul class="port-content">
-                <li>Music section with links to streaming platforms</li>
-                <li>Tour date section to display upcoming shows</li>
-                <li>Media gallery with photos and performance images</li>
-                <li>Contact form for booking and fan outreach</li>
-                <li>Responsive layout for seamless viewing on mobile and desktop</li>
-            </ul>
-            <p>I handled all design and development aspects of the project, from layout and styling to interactivity and mobile optimization. The site gives the band a professional online presence while keeping things lightweight and easy to update.</p>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/icons/port.png">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body id="portfolio">
+  <!-- NavBar-->
+  <nav>
+    <ul>
+      <li><a class="navBar" href="/">Home</a></li>
+      <li><a class="navBar" href="/pages/aboutme.html">About Me</a></li>
+      <li><a class="navBar" id="active" href="/pages/portfolio.html">Portfolio</a></li>
+      <li><a class="navBar" href="/pages/resume.html">Resume</a></li>
+    </ul>
+  </nav>
+  <!-- Skills -->
+  <div class="skills-container">
+    <div class="skills">
+      <a href="https://en.wikipedia.org/wiki/SQL"><img class="skill-icon" src="/assets/icons/sql.svg" alt="SQL"></a>
+      <a href="https://en.wikipedia.org/wiki/Swift_(programming_language)"><img class="skill-icon"
+          src="/assets/icons/swift.svg" alt="Swift"></a>
+      <a href="https://en.wikipedia.org/wiki/HTML"><img class="skill-icon" src="/assets/icons/html.svg" alt="HTML"></a>
+      <a href="https://en.wikipedia.org/wiki/CSS"><img class="skill-icon" src="/assets/icons/css.svg" alt="CSS"></a>
+      <a href="https://en.wikipedia.org/wiki/JavaScript"><img class="skill-icon" src="/assets/icons/javascript.svg"
+          alt="JavaScript"></a>
+      <a href="https://en.wikipedia.org/wiki/Node.js"><img class="skill-icon" src="/assets/icons/nodejs.svg"
+          alt="Node.js"></a>
+      <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)"><img class="skill-icon"
+          src="/assets/icons/react.svg" alt="React"></a>
+      <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img class="skill-icon"
+          src="/assets/icons/python.svg" alt="Python"></a>
+      <a href="https://en.wikipedia.org/wiki/Java_(programming_language)"><img class="skill-icon"
+          src="/assets/icons/java.svg" alt="Java"></a>
+      <a href="https://en.wikipedia.org/wiki/C%2B%2B"><img class="skill-icon" src="/assets/icons/cplusplus.svg"
+          alt="C++"></a>
+    </div>
+    <div class="skills">
+      <a href="https://en.wikipedia.org/wiki/Git"><img class="skill-icon" src="/assets/icons/git.svg" alt="Git"></a>
+      <a href="https://en.wikipedia.org/wiki/Object-oriented_programming"><img class="skill-icon"
+          src="/assets/icons/oop.svg" alt="OOP"></a>
+      <a href="https://en.wikipedia.org/wiki/Debugging"><img class="skill-icon" src="/assets/icons/debug.svg"
+          alt="Debugging"></a>
+      <a href="https://en.wikipedia.org/wiki/User_experience"><img class="skill-icon" src="/assets/icons/ux.svg"
+          alt="UX/UI"></a>
+      <a href="https://en.wikipedia.org/wiki/Visual_Studio_Code"><img class="skill-icon" src="/assets/icons/vscode.svg"
+          alt="VSCode"></a>
+    </div>
+  </div>
+  <!-- Portfolio -->
+  <div class="content-container">
+    <h1 class="port-title">PORTFOLIO</h1>
+    <ul class="wrapper">
+      <div class="port-item">
+        <img class="port-img" src="/assets/img/karateKids.png" alt="">
+        <div class="port-text">
+          <h1>MHKWebsite</h1>
+          <h2>Live martial arts training platform with authentication and belt-specific content</h2>
+          <p>Full-stack React application serving 100+ active students with personalized study materials and secure
+            access control.</p>
+
+          <h3>Key Features:</h3>
+          <ul class="port-content">
+            <li>Live production deployment with Auth0 authentication</li>
+            <li>Belt-specific content delivery system</li>
+            <li>MongoDB backend with Node.js API</li>
+          </ul>
+          <p><strong>Impact:</strong> 100+ active users accessing belt-specific training content</p>
         </div>
       </div>
-    </div>
-  </body>
+      <div class="port-item">
+        <img class="port-img" src="/assets/img/carTag.jpeg" alt="Car-Card">
+        <div class="port-text">
+          <h1>JustMalikBeats</h1>
+          <h2>E-commerce platform for music producers with secure payment processing</h2>
+          <p>Production-ready beat marketplace featuring Stripe integration and robust security measures for digital
+            content delivery.</p>
+          <h3>Key Features:</h3>
+          <ul class="port-content">
+            <li>Stripe payment integration with secure checkout flow</li>
+            <li>Digital rights management and secure file delivery</li>
+            <li>User authentication and order management system</li>
+          </ul>
+          <p><strong>Impact:</strong> Processing secure transactions with $0 fraud incidents</p>
+        </div>
+      </div>
+      <div class="port-item">
+        <img class="port-img" src="/assets/img/futons.jpg" alt="futons">
+        <div class="port-text">
+          <h1>RemoraNotes</h1>
+          <h2>Mobile-first note-taking app with local-first architecture</h2>
+          <p>Native iOS application built with Swift featuring offline-first data persistence and seamless sync
+            capabilities.</p>
+          <h3>Key Features:</h3>
+          <ul class="port-content">
+            <li>Local-first data storage with CoreData persistence</li>
+            <li>Native iOS design with SwiftUI interface</li>
+            <li>Offline-capable with background sync</li>
+          </ul>
+          <p><strong>Impact:</strong> Sub-100ms note creation with zero data loss</p>
+        </div>
+      </div>
+  </div>
+  </div>
+</body>
+
 </html>
