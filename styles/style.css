@@ -266,15 +266,11 @@ nav a:hover {
   }
 }
 
-max-width: 400px;
-}
-
 .name-card h1 {
   color: var(--tile-color);
   text-align: center;
   background: transparent;
   font-size: 1rem;
-}
 }
 
 /** General Styles */
