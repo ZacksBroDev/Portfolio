@@ -399,6 +399,7 @@ h1 {
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
+  overflow-y: auto;
 }
 
 .port-img {
@@ -414,6 +415,7 @@ h1 {
 
 .port-item:hover .port-text {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .port-item:hover .port-img {
@@ -452,6 +454,58 @@ h1 {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: .5rem;
+}
+
+.port-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.port-links .btn {
+  min-height: 50px;
+  padding: 12px 20px;
+  font-size: 14px;
+  max-width: 180px;
+  position: relative;
+  z-index: 100;
+}
+
+/* Mobile styles for portfolio items */
+@media (max-width: 768px) {
+  .port-item {
+    width: 100% !important;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .port-text {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    position: relative;
+    height: auto;
+  }
+
+  .port-img {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    clip-path: inset(0 0 0 0) !important;
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .port-links .btn {
+    font-size: 12px;
+    padding: 10px 16px;
+    min-height: 45px;
+  }
 }
 
 
