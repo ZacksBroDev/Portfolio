@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
 #home {
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -60,6 +66,7 @@ nav {
   padding: 15px 20px;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -102,20 +109,22 @@ nav a:hover {
 }
 
 @media (max-width: 600px) {
-  .navBar {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+  nav {
+    padding: 10px 5px;
   }
 
   nav ul {
-    flex-direction: row;
-    align-items: center;
+    gap: 5px;
     justify-content: space-evenly;
   }
 
+  .navBar {
+    padding: 8px 12px;
+    font-size: 0.7rem;
+  }
+
   nav li {
-    font-size: 12px;
+    font-size: 0.7rem;
     text-align: center;
   }
 }
@@ -126,10 +135,13 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   position: relative;
   gap: 5vw;
-  padding: 0 5vw
+  padding: 0 5vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .name-card {
@@ -210,21 +222,33 @@ nav a:hover {
   width: 70px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30%;
+    padding: 0 1rem;
+    height: auto;
+    min-height: 100vh;
   }
 
   .name-card {
-    max-width: 400px;
+    max-width: 90%;
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .name-card h1 {
+    font-size: 2rem;
+  }
+
+  .name-card:hover {
+    transform: scale(1.05);
   }
 
   #contact-me {
-    width: 80%;
+    width: 90%;
     max-width: 300px;
     margin-right: 0;
     flex-direction: row;
@@ -238,16 +262,19 @@ nav a:hover {
   }
 
   .contact-container {
-    width: 80%;
-    max-width: 400px;
+    width: 90%;
   }
+}
 
-  .name-card h1 {
-    color: var(--tile-color);
-    text-align: center;
-    background: transparent;
-    font-size: 1rem;
-  }
+max-width: 400px;
+}
+
+.name-card h1 {
+  color: var(--tile-color);
+  text-align: center;
+  background: transparent;
+  font-size: 1rem;
+}
 }
 
 /** General Styles */
@@ -295,11 +322,14 @@ h1 {
 .content-container {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
+  max-width: 100%;
   padding: 1rem;
   border-radius: 30px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-wrap: pre-wrap;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .profile {
@@ -307,23 +337,39 @@ h1 {
   width: 180px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .content-container {
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+  }
+
   .content-container h1 {
     font-size: 1.5rem;
+    padding: 0 0.5rem;
   }
 
   .content-container h2 {
     font-size: 1.2rem;
+    margin-left: 1rem;
   }
 
   .content-container h3 {
     font-size: 1rem;
+    margin-left: 1.5rem;
   }
 
   .content-container p {
-    font-size: larger;
-    margin-left: 0;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     margin-top: .5rem;
+  }
+
+  .content-container li {
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -374,9 +420,11 @@ h1 {
 .skills-container {
   padding: 1rem;
   width: fit-content;
+  max-width: 100%;
   margin: 1rem auto;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 
 .port-item {
@@ -517,7 +565,10 @@ h1 {
   align-items: flex-start;
   gap: 2rem;
   width: 100%;
+  max-width: 100%;
   margin-top: 3rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .img-wrapper {
@@ -527,6 +578,7 @@ h1 {
   justify-content: flex-start;
   width: 250px;
   /* Fixed width for consistent grid */
+  max-width: 100%;
 }
 
 .images {
